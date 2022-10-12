@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.dark {
+  background: black;
+}
+.dark h1 {
+  color: white;
+}
+.container {
+  max-width: 968px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.header_title {
+  font-size: 2rem;
+}
+.search_container {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  background-color: #f9f6ea;
+  border-radius: 15px;
+}
+input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: #f9f6ea;
+  font-size: 1rem;
+  width: 50%;
+}
+.search_icon {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.noteslist {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.note {
+  background-color: #b8ff0b;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note.new {
+  background-color: aqua;
+}
+textarea {
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: aqua;
+  resize: none;
+}
+.note_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.save_btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #fff1ff;
+  border: none;
+}
+.toggle {
+  padding: 10px;
+  font-weight: bold;
+}
